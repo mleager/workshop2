@@ -16,6 +16,7 @@ Step-by-Step:
    2. - Create ECR repo
         
         -- Go to 'Push Commands' and save the CLI command for authenticating Docker client to the the ECR registry
+        
         -- Will be used at the end
         
    3. - Setup RDS service
@@ -42,6 +43,7 @@ Step-by-Step:
   10. - Run migrations for Django app's DB
         
         -- docker-compose exec web python manage.py makemigrations --noinput
+        
         -- docker-compose exec web python manage.py migrate --noinput
     
     * When I originally setup EC2 via the SSH session, I installed Docker Compose V1 (which requires hypen in docker-compose cli command)
@@ -54,5 +56,7 @@ Step-by-Step:
   13. - Push workshop2 image to the ECR 
   
         -- Use the CLI Push Command that was saved after the ECR repo was created
+        
         -- docker-compose push 
+        
         -- Confirm the Django and NGINX images are now inside the ECR repo via AWS console 
