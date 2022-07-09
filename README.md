@@ -21,6 +21,7 @@ Step-by-Step:
         
    3. - Setup RDS service
     
+    
    4. - Update ALLOWED_HOSTS with th EC2 DNS address in workshop2/app/nc_tutorials/settings.py 
     
    5. - Create docker-compose.yml file with the ECR repo's URI
@@ -33,6 +34,7 @@ Step-by-Step:
         -- from decouple import config and apply to DATABASE settings in workshop2/app/nc_tutorias/settings.py 
         
    7. - Create GitHub repo, add remote origin, and push project to it
+    
     
    8. - Clone GitHub repo to EC2 instance via SSH session
     
@@ -50,6 +52,7 @@ Step-by-Step:
       I am not yet proficient in linux commands/provisioning so I kept this version rather than installing V2
           
   11. - Confirm container is running on the Elastic IP
+   
    
   12. - Use Insomnia to send a few POST requests and confirm containerized Django web app is accepting
    
